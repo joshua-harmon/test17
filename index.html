@@ -12,9 +12,11 @@
     <main class="app" id="app">
         <div class="container">
             
-            <card v-for="card in cards" data-image="images/tarots/wary/{{card.id}}.png">
+            <card v-for="card in cards" data-image="images/tarots/backface/backface-default.png">
+                <!-- TODO: need to hack this and try to load card images inside data-image prop
                 <h1 slot="header">{{card.name}}</h1>
                 <p slot="content">{{card.text}}</p>
+                -->
             </card>
         </div>
     </main>
