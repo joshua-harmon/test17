@@ -1,0 +1,17 @@
+@mixin keyframes($animation) {
+    @-webkit-keyframes #{$animation} {
+        @content;
+    }
+    @keyframes #{$animation} {
+        @content;
+    }
+} 
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin transition($args...) {
+  transition: $args;
+}
