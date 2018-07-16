@@ -126,7 +126,7 @@ Vue.component('card', {
         },
         cardBgImage: function cardBgImage() {
             return {
-                backgroundImage: 'url(' + this.dataImage + ')'
+                backgroundImage: 'url("images/tarots/default/' + this.dataImage + '.png")'
             };
         }
     },
