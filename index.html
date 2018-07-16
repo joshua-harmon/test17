@@ -12,7 +12,7 @@
     <main class="app" id="app">
         <div class="container">
             <div v-for="card in cards" v-on:click="loadNext">
-                <card  data-image="images/tarots/default/1.png" :key=card.id>
+                <card v-bind:data-image="card.id" :key=card.id>
                     <h1 slot="header">{{card.name}}</h1>
                     <p slot="content">{{card.text}}</p>
                 </card>
